@@ -1,0 +1,19 @@
+{
+  "name": "zikcenter-static",
+  "main": "index.html",
+  "version": "0.0.0",
+  "single-instance": true,
+  "window": {
+    "title": "ZikCenter Static",
+    "icon": "favicon.png",
+    "width": 550,
+    "height": 450,
+    "min_width": 550,
+    "min_height": 450,
+    "toolbar": false
+  },
+  "dependencies": {
+      "fs-extra": "0.20.1"
+  },
+  "chromium-args": "--child-clean-exit"
+}
