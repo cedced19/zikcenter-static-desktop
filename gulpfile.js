@@ -59,10 +59,10 @@ gulp.task('html-template', function () {
 });
 
 gulp.task('css-template', ['html-template'], function () {
-    return gulp.src('vendor/css/*.css')
+    return gulp.src('app/template/vendor/css/*.css')
         .pipe(concat('styles.css'))
         .pipe(uncss({
-            html: ['index.html']
+            html: ['app/template/index.html']
         }))
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'ie 8', 'ie 9']
